@@ -35,6 +35,7 @@ body {
   display: inline-block;
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 0px;
 }
 
 .gray-box {
@@ -45,9 +46,21 @@ body {
   border-radius: 8px;
 }
 
-p {
-  margin: 10px 0;
+  /* Define box-text styles */
+  .box-text b{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items at the start of the column */ /* Optional padding for text */
 }
+
+  /* Style the p tags within box-text */
+  .box-text p {
+    margin: 0; /* Remove default margins */
+    display: inline; /* Display p tags inline */
+    margin-right: 10px; /* Optional margin between the p tags */
+  }
+
+
 .navigation a:active,
 .navigation a:focus {
   color: white;
